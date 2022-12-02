@@ -1,0 +1,19 @@
+syntax="proto3";
+
+message FullName{
+string name = 1;
+string surname = 2;
+optional string patr = 3;
+}
+
+message Student{
+FullName fName = 1;
+repeated int ratings = 2;
+float averageScore = 3;
+}
+
+message StudentGroup{
+repeated Student students = 1;
+}
+
+
